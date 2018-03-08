@@ -23,7 +23,7 @@ function renderHeader() {
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="politics.html">Politics</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="sports.html">Sports</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="entertainment.html">Entertainment</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contests</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="health.html">Health</a>
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
