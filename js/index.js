@@ -60,7 +60,7 @@ var pageName = (function () {
         return a.substr(b + 1);
     }());
 
-var url = (function (pageName) {
+var url = (function () {
     
     switch(pageName) {
     case "index.html":
