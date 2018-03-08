@@ -28,17 +28,17 @@ function newsTemplate(news) {
     return `
             <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="${news.articlesUrltoimage}">
+                <img src="${news["Articles Urltoimage"]}">
               </div>
               <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">${news.articlesTitle}</h4>
+                 <h4 class="mdl-card__title-text">${news["Articles Title"]}</h4>
               </div>
               <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">${news.articlesDescription}</span>
+                <span class="mdl-typography--font-light mdl-typography--subhead">${news["Articles Description"]}</span>
               </div>
               <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--font-light" href="${news.articlesUrl}" target="_blank">
-                   ${news.articlesAuthor}
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--font-light" href="${news["Articles Url"]}" target="_blank">
+                   ${news["Articles Source Name"]}
                  </a>
               </div>
             </div>    
