@@ -6,8 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (ourRequest.status >= 200 && ourRequest.status < 400) {
         // This is where we'll do something with the retrieved data
             var ourData = JSON.parse(ourRequest.responseText);
-            renderHTML(ourData);
-            console.log(pageheading);
+            renderHTML(ourData.articles);
             renderPageHeading();
             } 
         else {
@@ -28,17 +27,17 @@ function newsTemplate(news) {
     return `
             <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="${news.articlesUrltoimage}">
+                <img src="${news.urlToImage}">
               </div>
               <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">${news.articlesTitle}</h4>
+                 <h4 class="mdl-card__title-text">${news.title}</h4>
               </div>
               <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">${news.articlesDescription}</span>
+                <span class="mdl-typography--font-light mdl-typography--subhead">${news.description}</span>
               </div>
               <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--font-light" href="${news.articlesUrl}" target="_blank">
-                   ${news.articlesAuthor}
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--font-light" href="${news.url}" target="_blank">
+                   ${news.source.name}
                  </a>
               </div>
             </div>    
