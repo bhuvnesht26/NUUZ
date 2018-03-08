@@ -100,13 +100,13 @@ var pageheading = (function (){
         pageheading = "Top Entertainment News";
         break;
     case "health.html":
-        pageheading = "News to keep you Fit";
+        pageheading = "Top Health News";
         break;
     case "politics.html":
         pageheading = "Top Political News";
         break;
     case "sports.html":
-        pageheading = "Sports Feed";
+        pageheading = "Top Sports Headlines";
         break;
     default:
         pageheading = "Top Headlines";
