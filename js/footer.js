@@ -19,8 +19,5 @@ function renderFooter() {
             </div>
           </div>
 
-          <div class="mdl-mega-footer--top-section" style="text-align: center;">            
-            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
-          </div>
         `;
 }
