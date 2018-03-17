@@ -1,11 +1,11 @@
-
+var ourData;
 document.addEventListener("DOMContentLoaded", function () {
     var ourRequest = new XMLHttpRequest();
     ourRequest.open('GET', url);
     ourRequest.onload = function () {
         if (ourRequest.status >= 200 && ourRequest.status < 400) {
         // This is where we'll do something with the retrieved data
-            var ourData = JSON.parse(ourRequest.responseText);
+            ourData = JSON.parse(ourRequest.responseText);
             renderHTML(ourData.articles);
             renderPageHeading();
             }
@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function newsTemplate(news) {
 
-    return `
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+     return `
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp">
               <div class="mdl-card__media">
                 <img src="${news.urlToImage}">
               </div>
               <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">${news.title}</h4>
+                <h4 class="mdl-card__title-text">${news.title}</h4>
               </div>
               <div class="mdl-card__supporting-text">
                 <span class="mdl-typography--font-light mdl-typography--subhead">${news.description}</span>
@@ -53,6 +53,8 @@ document.getElementById("news-container").innerHTML = `
 function renderPageHeading() {
     document.getElementById("page-heading").innerHTML = pageheading;
 }
+
+/** pageName gives the name of current page **/
 
 var pageName = (function () {
         var a = window.location.href,
@@ -81,6 +83,9 @@ var url = (function () {
     case "sports.html":
         url = "https://bhuvnesht26.github.io/api/sports-api.json";
         break;
+    case "movies.html":
+        url = "https://bhuvnesht26.github.io/api/movies-api.json";
+        break;
     default:
         url = "https://bhuvnesht26.github.io/api/index-api.json";
 }
@@ -107,6 +112,12 @@ var pageheading = (function (){
         break;
     case "sports.html":
         pageheading = "Sports";
+        break;
+    case "movies.html":
+        pageheading = "Movies";
+        break;
+    case "technology.html":
+        pageheading = "Technology";
         break;
     default:
         pageheading = "Top Headlines";
