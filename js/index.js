@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var ourData = JSON.parse(ourRequest.responseText);
             renderHTML(ourData.articles);
             renderPageHeading();
-            } 
+            }
         else {
                     console.log("We connected to the server, but it returned an error.");
                 }
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function newsTemplate(news) {
-    
+
     return `
             <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
@@ -40,7 +40,7 @@ function newsTemplate(news) {
                    ${news.source.name}
                  </a>
               </div>
-            </div>    
+            </div>
         `;
 }
 
@@ -61,7 +61,7 @@ var pageName = (function () {
     }());
 
 var url = (function () {
-    
+
     switch(pageName) {
     case "index.html":
         url = "https://bhuvnesht26.github.io/api/index-api.json";
@@ -88,25 +88,25 @@ var url = (function () {
 }());
 
 var pageheading = (function (){
-    
+
     switch(pageName) {
     case "index.html":
         pageheading = "Top Headlines";
         break;
     case "business.html":
-        pageheading = "Top Business News";
+        pageheading = "Business";
         break;
     case "entertainment.html":
-        pageheading = "Top Entertainment News";
+        pageheading = "Entertainment";
         break;
     case "health.html":
-        pageheading = "Top Health News";
+        pageheading = "Health";
         break;
     case "politics.html":
-        pageheading = "Top Political News";
+        pageheading = "Politics";
         break;
     case "sports.html":
-        pageheading = "Top Sports Headlines";
+        pageheading = "Sports";
         break;
     default:
         pageheading = "Top Headlines";
