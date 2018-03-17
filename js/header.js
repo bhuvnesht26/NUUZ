@@ -10,7 +10,7 @@ function renderHeader() {
 
         <div class="mdl-layout__header-row">
             <span class="android-title mdl-layout-title">
-                <img class="android-logo-image" src="images/android-logo.png">
+                <img class="nuuz-logo-image" src="images/nuuz-logo.png">
             </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
             <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -28,7 +28,7 @@ function renderHeader() {
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="images/android-logo.png">
+            <img class="nuuz-logo-image" src="images/nuuz-logo.png">
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
@@ -45,7 +45,7 @@ function renderDrawer() {
     document.getElementById("header-drawer").innerHTML = `
 
         <span class="mdl-layout-title">
-          <img class="android-logo-image" src="images/android-logo-white.png">
+          <img class="nuuz-logo-image" src="images/nuuz-logo-white.png">
         </span>
         <nav class="mdl-navigation">
               <a class="mdl-navigation__link " href="index.html">Top Headlines</a>
