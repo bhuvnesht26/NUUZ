@@ -83,8 +83,8 @@ var url = (function () {
     case "sports.html":
         url = "https://bhuvnesht26.github.io/api/sports-api.json";
         break;
-    case "movies.html":
-        url = "https://bhuvnesht26.github.io/api/movies-api.json";
+    case "technology.html":
+        url = "https://bhuvnesht26.github.io/api/technology-api.json";
         break;
     default:
         url = "https://bhuvnesht26.github.io/api/index-api.json";
@@ -112,9 +112,6 @@ var pageheading = (function (){
         break;
     case "sports.html":
         pageheading = "Sports";
-        break;
-    case "movies.html":
-        pageheading = "Movies";
         break;
     case "technology.html":
         pageheading = "Technology";
