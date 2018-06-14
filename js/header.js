@@ -9,9 +9,11 @@ function renderHeader() {
     document.getElementById("header-container").innerHTML = `
 
         <div class="mdl-layout__header-row">
+        <a href="../index/index.html">
             <span class="android-title mdl-layout-title">
                 <img class="nuuz-logo-image" src="../images/nuuz-logo.png">
             </span>
+        </a>
           <!-- Add spacer, to align navigation to the right in desktop -->
             <div class="android-header-spacer mdl-layout-spacer"></div>
 
@@ -27,9 +29,11 @@ function renderHeader() {
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="../health-news/health.html">Health</a>
             </nav>
           </div>
-          <span class="android-mobile-title mdl-layout-title">
-            <img class="nuuz-logo-image" src="../images/nuuz-logo.png">
-          </span>
+          <a href="../index/index.html">
+            <span class="android-mobile-title mdl-layout-title">
+                <img class="nuuz-logo-image" src="../images/nuuz-logo.png">
+            </span>
+          </a>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
@@ -44,9 +48,11 @@ function renderDrawer() {
 
     document.getElementById("header-drawer").innerHTML = `
 
+        <a href="../index/index.html">
         <span class="mdl-layout-title">
           <img class="nuuz-logo-image" src="../images/nuuz-logo-white.png">
         </span>
+        </a>
         <nav class="mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="../index/index.html">Home</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="../business-news/business.html">Business</a>
