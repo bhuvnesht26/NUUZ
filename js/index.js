@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function newsTemplate(news) {
 
      return `
+        <a style="color:#fff;" href="${news.url}" target="_blank">
             <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp">
               <div class="mdl-card__media">
                 <img src="${news.urlToImage}">
@@ -32,6 +33,7 @@ function newsTemplate(news) {
               <div class="mdl-card__title">
                 <h4 class="mdl-card__title-text">${news.title}</h4>
               </div>
+            </a>
               <div class="mdl-card__supporting-text">
                 <span class="mdl-typography--font-light mdl-typography--subhead">${news.description}</span>
               </div>
